@@ -1,16 +1,27 @@
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     devtool: 'eval-source-map',
     mode: 'development',
     entry: './src/app.ts',
+    plugins: [
+        new MiniCssExtractPlugin()
+    ],
     module: {
         rules: [
             { 
-                test: /\.ts$/,
-                use: 'ts-loader',
+                test: /\.(sa|sc|c)ss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "sass-loader",
+                ],
                 include: [path.resolve(__dirname, 'src')]
             },
+            {
+                test: /\.ts$/,
+            }
           ]
     },
     resolve: {
