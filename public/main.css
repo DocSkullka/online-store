@@ -1,0 +1,117 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
+  \*********************************************************************************************************/
+body {
+  margin: 0px;
+  background-color: rgb(78, 2, 62);
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  gap: 40%;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0px 0px 30px 30px;
+  border-bottom: groove 0.2em rgb(111, 0, 255);
+  padding-top: 20px;
+  margin: 0px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.header .nameStore {
+  color: white;
+}
+.header .total {
+  color: white;
+}
+.header .totalContent {
+  color: white;
+}
+
+.main .category {
+  border-radius: 10px;
+  border: groove 0.1em rgb(111, 0, 255);
+}
+
+.main {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+}
+.main .filtres {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20%;
+  height: 1000px;
+  gap: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: orange;
+}
+.main .filtres .nameFiltres {
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0px;
+  font-size: 17px;
+}
+.main .category {
+  border: 0px;
+  width: 100%;
+  background-color: rgba(184, 141, 181, 0.5);
+}
+.main .category .checkbox {
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  border: none;
+  gap: 10px;
+  column-rule: 10px dotted;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.main .category .checkbox .check {
+  list-style-type: none;
+  width: 100%;
+  font-size: 21px;
+}
+.main .category .checkbox .check ::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+.main .category .checkbox .check .nameCategory {
+  width: 800px;
+}
+.main .category .checkbox .check .span {
+  margin-right: auto;
+}
+.main .category .form-control-range {
+  width: 99%;
+}
+.main .product {
+  width: 77%;
+  height: 100%;
+  background-color: rgb(6, 122, 230);
+  opacity: 0.3;
+  border-radius: 20px;
+}
+.main .product .productHeaderPanel {
+  width: 100%;
+  height: 80px;
+  background-color: aqua;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+}
+.main .product .blockProduct {
+  width: 100px;
+  height: 200px;
+  background-color: black;
+}

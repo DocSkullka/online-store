@@ -8,9 +8,16 @@
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "project": ["tsconfig.json"],
+        "project": "tsconfig.json",
         "sourceType": "module"
-    },
-    "rules": {
+    // "module.exports": {
+    //     "parserOptions": {
+    //         "project": "tsconfig.json",
+    //         "tsconfigRootDit": "__dirname",
+    //         "sourceType": "module"
+        },
+        "rules": {
+        }
     }
-}
+    
+    

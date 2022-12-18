@@ -1,13 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Online-store</title>
-</head>
-<body>
-   <script src="bundle.js"></script> 
-</body>
+  </head>
+  <body>
+    <div class="containet-fluid">
+      <header class="header">
+        <div class="nameStore">Online Store</div>
+        <div class="total">Cart total:</div>
+        <div class="totalContent">0</div>
+      </header>
+      <main class="main">
+        <div class="filtres">
+          <div class="reset">
+            <button type="button" class="btn btn-danger">Primary</button>
+          </div>
+
+
+          <!-- category -->
+          <div class="category">
+            <h5 class="nameFiltres">Category</h5>
+            <div class="checkbox">
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">Anime</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check sc">
+                <input type="checkbox"></input>
+                <label class="nameCategory" for="iPhone">Iphone</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">God of War</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">Dota2</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">Dota2</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">Dota2</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">Dota2</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">Dota2</label>
+                <span class="span">(0/3)</span>
+              </div>
+              <div class="check">
+                <input type="checkbox"></input>
+                <label  class="nameCategory" for="Anime">The Witcher 3</label>
+                <span class="span">(0/3)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- //Brand -->
+          <div class="category">
+            <h5 class="nameFiltres">Brand</h5>
+            <div class="checkbox">  
+              <div class="check">
+                <input type="checkbox"></input>
+                Anime
+              </div>
+              <div class="check sc">
+                <input type="checkbox">footbal</input>
+              </div>
+              <div class="check">
+                <input type="checkbox">voleybal</input>
+              </div>
+              <div class="check">
+                <input type="checkbox">dota</input>
+              </div>
+              <div class="check">
+                <input type="checkbox">the witcher</input>
+              </div>
+            </div>
+          </div>
+
+          <!-- //Price -->
+          <div class="category">
+            <h5 class="nameFiltres">Price</h5>
+            <div class="wrapper">
+            <input class="multi-range" type="range" min="0" max="100" value="30"  />
+            </div>
+          </div>
+
+          <!-- //Stock -->
+          <div class="category">
+            <h5 class="nameFiltres">Stock</h5>
+          </div>
+        </div>
+
+
+        <div class="product">
+          <div class="productHeaderPanel">
+            <div class="sortPanel">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Кнопка выпадающего списка
+                </button>
+              
+              </div>
+
+            </div>
+            <div class="found">Found:</div>
+            <div class="search"></div>
+          </div>
+          <div class="blockProduct"></div>
+        </div>
+
+
+      </main>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
 </html>
