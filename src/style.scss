@@ -237,29 +237,29 @@ border-bottom-right-radius: $br ;
         // Block Product 
         .col-6{
             
-            .blockProduct{
+            .blockProduct, .blockProduct1{
                 display: flex;
                 flex-direction: column;
                 padding: 10px;
                 width: 100%;
                 // gap:10px;
-                .cardProduct{
+                .cardProduct, .cardProduct1{
                     height: 500px;
                     background-color: black;
                     @include borderT(10px,10px);
                     // border: solid 1px white;
-                    .itemImg{
+                    .itemImg, .itemImg1{
                         height: 95.2%;
                         background-size: 100% 100%;
                         background-repeat: no-repeat;
                     }
-                    .nameItem{
+                    .nameItem, .nameItem1{
                         text-align: center;
                         background-color: rgba(255, 255, 255, 0.5);
                         @include borderT(10px,10px);
                     }
                 }
-                .itemInfo{
+                .itemInfo, .itemInfo1{
                     word-wrap: break-word;
                     padding-left: 3px;
                     @include borderB(10px,10px);
