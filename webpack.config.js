@@ -6,7 +6,16 @@ module.exports = {
   devtool: 'eval-source-map',
   mode: 'development',
   entry: './src/app.ts',
-  plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({ template: './src/index.html' })],
+  plugins: [new MiniCssExtractPlugin({
+    filename: '[name].css'
+  }),
+     new HtmlWebpackPlugin({
+       template: './src/index.html'
+      }),
+    new HtmlWebpackPlugin({
+      template: './src/basket.html',
+      filename: 'basket.html',
+    })],
   module: {
     rules: [
       {
