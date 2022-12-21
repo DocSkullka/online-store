@@ -1,6 +1,6 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -20,19 +20,19 @@ module.exports = {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-        include: [path.resolve(__dirname, 'src')]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        include: [path.resolve(__dirname, "src")],
       },
       {
-        test: /\.ts$/
-      }
-    ]
+        test: /\.ts$/,
+      },
+    ],
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: [".ts", ".js"],
   },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public')
-  }
-}
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "public"),
+  },
+};
