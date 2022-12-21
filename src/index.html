@@ -9,11 +9,17 @@
     <title>Online-store</title>
   </head>
   <body>
-    <header class="header">
-      <div class="nameStore">Online Store</div>
-      <div class="total">Cart total:</div>
-      <div class="totalContent">0</div>
-    </header>
+    <header">
+      <div class="container-fluid headers">
+        <div class="row">
+          <div class="col-4 colHead">
+            <div class="nameStore">Online Store</div>
+            <div class="total">Cart total:</div>
+            <div class="totalContent">0</div>
+          </div>
+        </div>
+      </div>
+        </header>
     <main class="main">
       <div class="container-fluid">
         <div class="row">
@@ -30,47 +36,47 @@
               <div class="checkbox">
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">Anime</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check sc">
-                  <input type="checkbox"></input>
-                  <label class="nameCategory" for="iPhone">Iphone</label>
+                  <label  class="nameCategory">Anime</label>
                   <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">God of War</label>
+                  <label class="nameCategory">Iphone</label>
                   <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">Dota2</label>
+                  <label  class="nameCategory">God of War</label>
                   <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">Dota2</label>
+                  <label  class="nameCategory">Dota2</label>
                   <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">Dota2</label>
+                  <label  class="nameCategory">Dota2</label>
                   <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">Dota2</label>
+                  <label  class="nameCategory">Dota2</label>
                   <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">Dota2</label>
+                  <label  class="nameCategory">Dota2</label>
                   <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  <label  class="nameCategory" for="Anime">The Witcher 3</label>
+                  <label  class="nameCategory">Dota2</label>
+                  <span class="span">(0/3)</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox"></input>
+                  <label  class="nameCategory">The Witcher 3</label>
                   <span class="span">(0/3)</span>
                 </div>
               </div>
@@ -80,64 +86,64 @@
             <div class="category">
               <h5 class="nameFiltres">Brand</h5>
               <div class="checkbox">  
+              <div class="check">
+                  <input type="checkbox"></input>
+                  <label  class="nameCategory">The Witcher 3</label>
+                  <span class="span">(0/3)</span>
+                </div>
                 <div class="check">
                   <input type="checkbox"></input>
-                  Anime
-                </div>
-                <div class="check sc">
-                  <input type="checkbox">footbal</input>
+                  <label  class="nameCategory">The Witcher 3</label>
+                  <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
-                  <input type="checkbox">voleybal</input>
+                  <input type="checkbox"></input>
+                  <label  class="nameCategory">The Witcher 3</label>
+                  <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
-                  <input type="checkbox">dota</input>
+                  <input type="checkbox"></input>
+                  <label  class="nameCategory">The Witcher 3</label>
+                  <span class="span">(0/3)</span>
                 </div>
                 <div class="check">
-                  <input type="checkbox">the witcher</input>
+                  <input type="checkbox"></input>
+                  <label  class="nameCategory">The Witcher 3</label>
+                  <span class="span">(0/3)</span>
+                </div>
+                <div class="check">
+                  <input type="checkbox"></input>
+                  <label  class="nameCategory">The Witcher 3</label>
+                  <span class="span">(0/3)</span>
                 </div>
               </div>
             </div>
 
             <!-- //Price -->
-            <div class="category">
-              <h5 class="nameFiltres">Price</h5>
-              <div class="wrapper">
-              <div class='wrap' style='--a: -30; --b: 20; --min: -50; --max: 50'>
-                  <input id='a' type='range' min='0' value='0' max='100'/>
-                  <input id='b' type='range' min='0' value='100' max='100'/>
-                </div>
-              </div>
+            <div class="range">
+              <label class="sumLow">0$</label>
+              <label>1000$</label>
             </div>
-
-            <!-- //Stock -->
-            <div class="category">
-              <h5 class="nameFiltres">Stock</h5>
-              <div class='wrap' style='--a: -30; --b: 20; --min: -50; --max: 50'>
-                <input id='a' type='range' min='0' value='0' max='100'/>
-                <input id='b' type='range' min='0' value='100' max='100'/>
-              </div>
-            </div>
+              <input type="range" class="custom-range" min="0" value="0" max="5" step="0.5" id="customRange3">
+            
             </div>
           </div>
+
+
           <div class="col-10">
             <div class="product">
               <div class="productHeaderPanel">
                 <div class="sortPanel">
                   <div class="dropdown">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle"
-                              type="button" id="dropdownMenu1" data-toggle="dropdown"
-                              aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <a class="dropdown-item" href="#!">Action</a>
-                        <a class="dropdown-item" href="#!">Another action</a>
-                      </div>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
                     </div>
-                  
                   </div>
+                  
 
                 </div>
                 <div class="found">Found:</div>
