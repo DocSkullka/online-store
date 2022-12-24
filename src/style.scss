@@ -1,3 +1,5 @@
+@import 'basket.scss';
+
 body{
     margin: 0px;
     background-color: whitesmoke;
@@ -17,9 +19,9 @@ body{
         width: 100%;
         display: flex;
         gap: 40%;
-
     }
 }
+
 
 
 // Бордер на товары 

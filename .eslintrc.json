@@ -3,21 +3,17 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "standard-with-typescript",
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "standard-with-typescript"
+    ],
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "project": "tsconfig.json",
-        "sourceType": "module"
-    // "module.exports": {
-    //     "parserOptions": {
-    //         "project": "tsconfig.json",
-    //         "tsconfigRootDit": "__dirname",
-    //         "sourceType": "module"
-        },
-        "rules": {
-        }
+        "sourceType": "module",
+        "project": ["tsconfig.json"]
+    },
+    "rules": {
     }
-    
-    
+}

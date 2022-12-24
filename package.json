@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server",
+    "serve": "webpack-dev-server --open",
     "build": "webpack",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
@@ -21,13 +21,14 @@
   },
   "homepage": "https://github.com/DocSkullka/online-store#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
     "css-loader": "^6.7.3",
-    "eslint": "^8.29.0",
+    "eslint": "^8.30.0",
     "eslint-config-standard-with-typescript": "^24.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "sass": "^1.56.2",
