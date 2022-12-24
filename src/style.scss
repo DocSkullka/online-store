@@ -123,6 +123,7 @@ border-bottom-right-radius: $br ;
             display: flex;
             gap: 80%;
             word-wrap: break-word;
+
         }
     }
 
@@ -145,14 +146,29 @@ border-bottom-right-radius: $br ;
             background-color: #52339a;
         }
         
+        .buttSwitch{
+            position: absolute;
+            // top: 115%;
+            height: 2000px;
+        }
+        .buttBack{
+            left: 19%;
+            
+        }
+        .buttNext{
+            right: 3%;
+        }
+
         // Block Product 
         .col-6{
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
+            overflow: hidden;
+            // height: 2105px;
             .blockProduct, .blockProduct1{
                 display: flex;
                 flex-direction: column;
-                margin: 10px;
+                margin: 5px;
                 width: 100%;
                 border-radius: 15px;
                 border: solid 5px #05b1b1;
