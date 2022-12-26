@@ -13,7 +13,7 @@ body{
     padding-top: 20px;
     margin: 0px;
     margin-bottom: 10px;
-    color: white;
+    @extend %colWhite;
     font-size: 20px;
     .colHead{
         width: 100%;
@@ -28,6 +28,10 @@ body{
 %tplborder{
     border-radius: 10px;
     border: groove 0.1em rgb(111, 0, 255);
+}
+
+%colWhite{
+    color: white;
 }
 
 @mixin borderT($tl,$tr) {
@@ -65,7 +69,7 @@ border-bottom-right-radius: $br ;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        color: white;
+        @extend %colWhite;
 
         // Header filtres
         .nameFiltres{
@@ -140,24 +144,80 @@ border-bottom-right-radius: $br ;
             @include borderT(10px,10px);
             border-bottom: groove 2px #52339a;
             display: flex;
-            color:white;
+            @extend %colWhite;
             font-size: 30px;
             padding: 10px;
             background-color: #52339a;
         }
-        
-        .buttSwitch{
-            position: absolute;
-            // top: 115%;
-            height: 2000px;
-        }
-        .buttBack{
-            left: 19%;
+
+        .buttSwitch {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            display: inline-block;
+            position: relative;
+          
+            &::before {
+              content: '';
+              display: block;
+              width: 20px;
+              height: 20px;
+              top: 50%;
+              left: 50%;
+              border-style: solid;
+              border-color: rgb(255, 255, 255);
+              border-width: 2px 2px 0 0;
+              position: absolute;
+              transform-origin: 50% 50%;
+            }
+          
+            &.left::before { 
+              transform: rotate(-135deg);
+              margin: -10px 0 0 -12px;
+            }
+            &.right::before { 
+              transform: rotate(45deg); 
+              margin: -10px 0 0 -18px;
+            }
             
-        }
-        .buttNext{
-            right: 3%;
-        }
+            &::after {
+              content: '';
+              display: block;
+              top: 50%;
+              left: 50%;
+              border-style: solid;
+              border-color: rgb(255, 255, 255);
+              position: absolute;
+              transform-origin: 50% 50%;
+            }
+            
+            &.left::after { 
+              width: 30px;
+              height: 0;
+              border-width: 2px 0 0 0;
+              transform: translate(-14px, -1px);
+            }
+            
+            &.right::after { 
+              width: 30px;
+              height: 0;
+              border-width: 2px 0 0 0;
+              transform: translate(-26px, -1px);
+            }
+            
+            &.circle {
+              background: #52339a;
+              border-radius: 50px;
+            }
+            
+            &.debug {
+              outline: 1px solid darkblue;
+          
+              &::before {
+                outline: 1px solid red;
+              }
+            }
+          }
 
         // Block Product 
         .col-6{
@@ -182,21 +242,53 @@ border-bottom-right-radius: $br ;
                     }
                     .nameItem, .nameItem1{
                         text-align: center;
-                        color: white;
+                        @extend %colWhite;
                         font-size: 20px;
                         // background-color: rgba(255, 255, 255, 0.5);
                         background-color: #52339a;
                         @include borderT(10px,10px);
                     }
                 }
-                .itemInfo, .itemInfo1{
-                    word-wrap: break-word;
-                    padding-left: 3px;
-                    @include borderB(10px,10px);
-                    color: white;
-                    font-size: 20px;
+                .blockInfo{
                     background-color: #52339a;
+                    display: flex;
+                    // gap: 20%;
 
+                    .itemInfo, .itemInfo1{
+                        word-wrap: break-word;
+                        padding-left: 3px;
+                        @include borderB(10px,10px);
+                        @extend %colWhite;
+                        font-size: 20px;
+                        
+                    }
+                    .buttonCard{
+                        margin-left: auto;
+                        margin-right: 40px;
+                        gap: 10%;
+                        .addItem{
+                            background-color: #05b1b1;
+                            @extend %colWhite;
+                            font-size: 20px;
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            border-style: none;
+                            margin-top: 20px;
+                        }
+                        .card{
+                            background-color: #05b1b1;
+                            @extend %colWhite;
+                            font-size: 20px;
+                            width: 200px;
+                            height: 50px;
+                            margin-top: 20px;
+                            border-radius: 50px;
+                            border-style: none;
+                            padding: 10px;
+                            padding-left: 70px;
+                        }
+                    }
                 }
             }
         }
@@ -206,3 +298,13 @@ border-bottom-right-radius: $br ;
     
 }
 
+.footers{
+    background-color: #52339a;
+    padding-left: 20px;
+    border-radius: 30px 30px 0px 0px;
+    border-top: solid 0.2em #52339a;
+    padding-top: 20px;
+    margin: 0px;
+    @extend %colWhite;
+    font-size: 20px;
+}
