@@ -1,0 +1,35 @@
+.headers{
+    background-color: #52339a;
+    gap: 42%;
+    padding-left: 20px;
+    border-radius: 0px 0px 30px 30px;
+    border-bottom: solid 0.2em #52339a;
+    padding-top: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+    @extend %colWhite;
+    font-size: 20px;
+}
+
+.mainBlock{
+    display: flex;
+    justify-content: center;
+    .mainRowBlock{
+        width: 1200px;
+        height: 800px;
+        border-radius: 20px;
+        background-color: #52339a;
+        .colMainHead{
+            height: 50px;
+            border-top-left-radius:20px ;
+            border-top-right-radius: 20px;
+            background-color: aqua;
+        }
+        .colMainBlock{
+            .sallMainImg{
+                width: 10px;
+                background-color:black ;
+            }
+        }
+    }
+}

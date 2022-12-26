@@ -8,10 +8,6 @@ let n:number = 5
 let i:number = 0 
 function slider(i:number,n:number) {
     for (i; i <= item.products.length - (item.products.length-n) ; i++) {
-        // if (i > item.products.length){
-        //     return console.log('Robot');
-
-        // }
         if (i % 2 === 0){
             document.querySelector('.contentProduct').insertAdjacentHTML('afterbegin', renderTemplate)
             document.querySelector('.nameItem').textContent = item.products[i].title
@@ -38,8 +34,6 @@ function slider(i:number,n:number) {
         console.log('n'+n);
 }
 }
-// console.log('Length'+(item.products.length-n));
-// console.log('end'+ i);
 }
 
 slider(i,n)
@@ -59,23 +53,8 @@ document.querySelector('.buttNext').addEventListener('click', () =>{
         }else if(i < item.products.length) {
             return slider(i+=6,n+=6)
         }
-    
-    // if (n == 95){
-    //     i = 96
-    //     n = 99
-    //     return slider(i,n)
-    // }else if(i < item.products.length) {
-    //     return slider(i+=6,n+=6)
-    // }else if (i == 99){
-    //     i = 0 
-    //     n = 5
-    //     slider(i,n)
-    // }else if (i >= item.products.length){
-    //     i = 0 
-    //     n = 5
-    //     slider(i,n)
-    // }
 })
+
 document.querySelector('.buttBack').addEventListener('click', () =>{
     document.querySelector('.contentProduct').innerHTML = ''
     document.querySelector('.contentProduct1').innerHTML = ''
