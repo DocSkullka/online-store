@@ -32,9 +32,6 @@ function nu(i = 0, n = 5) {
     console.log(i);
 }
 }
-// console.log('Length'+(item.products.length-n));
-// console.log('end'+ i);
-
 }
 
 
@@ -72,8 +69,3 @@ document.querySelector('.buttBack').addEventListener('click', () =>{
 
 
 
-// const brand = '<div class="check"> <input type="checkbox"></input> <label  class="brandName nameCategory"></label> <span class="span">(0/3)</span></div>'
-// for(let i = 0; i< item.products.length; i++) {
-//     document.querySelector('.brandBox').insertAdjacentHTML('afterbegin', brand)
-//     document.querySelector('.brandName').textContent = item.products[i].brand
-// }
