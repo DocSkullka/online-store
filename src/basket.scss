@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    color: black;
+  }
+
+
+@mixin centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bsktHeader{
+    gap: 33%;
+    width: 100%;
+    background-color: white;
+    padding: 0 40px;
+    border-bottom: solid 5px pink;
+    margin-bottom: 10px;
+    font-size: 20px;
+    .cart{
+        @include centerContent;
+    }
+    .basket{
+        @include centerContent;
+        justify-content: end;
+    }
+}
+
+.basketMain{
+    min-height: calc(100vh - 130px);
+    .basketContent{
+        @include centerContent;
+        font-size: 40px;
+    }
+}
+
+.basketFooter{
+    gap: 33%;
+    width: 100%;
+    background-color: white;
+    padding: 0 40px;
+    border-top: solid 5px pink;
+    font-size: 40px;
+    .footerYear{
+        @include centerContent;
+    }
+    .rsSchool{
+        @include centerContent;
+        justify-content: end;
+    }
+}
+
+.footerImg{
+    width: 70px;
+}
