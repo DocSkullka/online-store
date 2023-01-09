@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <title>Online-store</title>
+  <script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div class="container-fluid headers">
+        <div class="row">
+          <div class="col-4 colHead">
+            <div class="nameStore">
+              <img src="assets/logo..png">
+            </div>
+            <div class="total">Cart total:</div>
+            <div class="totalContent"><a href="./basket.html">0</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <div class="filtres">
+            <div class="reset">
+              <button type="button" class="btn btn-danger">Reset</button>
+            </div>
+
+
+            <!-- category -->
+            <div class="category">
+              <h5 class="nameFiltres">Category</h5>
+              <div class="checkbox">
+ 
+              </div>
+            </div>
+
+            <!-- //Brand -->
+            <div class="category">
+              <h5 class="nameFiltres">Brand</h5>
+              <div class="checkbox brandBox"></div>
+            </div>
+
+            <!-- //Price -->
+            <div class="range">
+              <label class="sumLow">0$</label>
+              <label>1000$</label>
+            </div>
+              <input type="range" class="custom-range" min="0" value="0" max="5" step="0.5" id="customRange3">
+            
+            </div>
+          </div>
+
+
+          <div class="col-10">
+            <div class="product">
+              <div class="productHeaderPanel">
+                <div class="sortPanel">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                  </div>
+                  
+
+                </div>
+                <div class="found">Found:</div>
+                <div class="search"></div>
+              </div>
+              <div class="container ">
+                <div class="row ">
+                  <div class="col contentProduct"></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid basketFooter">
+        <div class="row">
+          <div class="col">
+            <a href="https://github.com/DocSkullka" target="_blank"><img class="footerImg" src="assets/git..svg"></a>
+            <a href="https://github.com/Clou2Dy" target="_blank"><img class="footerImg" src="assets/git..svg"></a>
+          </div>
+          <div class="col footerYear">
+            Online Store 2023
+          </div>
+          <div class="col rsSchool">
+            <a href="https://rs.school/js/" target="_blank"><img class="footerImg" src="assets/rs_school_js..svg"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
