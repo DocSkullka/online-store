@@ -1,4 +1,5 @@
 const item = require('../item.json')
+import { slider } from "../app"
 
 
 
@@ -16,10 +17,11 @@ export function categoryRender() {
 
 export function categoryGlobalRender(el: any){
     if(el.target.checked == true && el.target.className != "brandCheckbox"){
-        Array.from(document.querySelectorAll('.blockProduct')).map(function (elem){
+        Array.from(document.querySelectorAll('.blockProduct')).map(function (elem: HTMLInputElement){
             if(!elem.classList.contains(el.target.id)){
+
                 elem.classList.add('hidden')
-            }else{
+            }else if(elem.classList.contains(el.target.id)){
                 elem.classList.add('visible')
             }
         })
@@ -27,15 +29,17 @@ export function categoryGlobalRender(el: any){
     if(el.target.checked == false && el.target.className != "brandCheckbox"){
         Array.from(document.querySelectorAll('.blockProduct')).map(function (elem){
             if(elem.classList.contains(el.target.id) && elem.classList.contains('visible')){
-                elem.classList.add('hidden') 
                 elem.classList.remove('visible')
+                elem.classList.add('hidden') 
             }
         })
     }
     if(el.target.checked == false && Array.from(document.querySelectorAll('.categoryCheckbox')).every((element:HTMLInputElement) => !element.checked)){      
         Array.from(document.querySelectorAll('.blockProduct')).map(function(element){
-            element.classList.add('visible')
+            element.classList.remove('visible')
+            element.classList.remove('hidden')
         })
+        document.removeEventListener('click', slider)
     }
 }
 
