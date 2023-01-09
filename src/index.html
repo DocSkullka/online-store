@@ -35,89 +35,14 @@
             <div class="category">
               <h5 class="nameFiltres">Category</h5>
               <div class="checkbox">
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">Anime</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label class="nameCategory">Iphone</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">God of War</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">Dota2</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">Dota2</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">Dota2</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">Dota2</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">Dota2</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">The Witcher 3</label>
-                  <span class="span">(0/3)</span>
-                </div>
+ 
               </div>
             </div>
 
             <!-- //Brand -->
             <div class="category">
               <h5 class="nameFiltres">Brand</h5>
-              <div class="checkbox brandBox">  
-              <!-- <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="brandName">The Witcher 3</label>
-                  <span class="span">(0/3)</span>
-                </div> -->
-                <!-- <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="brandName">The Witcher 3</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">The Witcher 3</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">The Witcher 3</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">The Witcher 3</label>
-                  <span class="span">(0/3)</span>
-                </div>
-                <div class="check">
-                  <input type="checkbox"></input>
-                  <label  class="nameCategory">The Witcher 3</label>
-                  <span class="span">(0/3)</span>
-                </div> -->
-              </div>
+              <div class="checkbox brandBox"></div>
             </div>
 
             <!-- //Price -->
@@ -131,7 +56,7 @@
           </div>
 
 
-          <div class="col-10 blockProduct">
+          <div class="col-10">
             <div class="product">
               <div class="productHeaderPanel">
                 <div class="sortPanel">
@@ -150,15 +75,10 @@
                 <div class="found">Found:</div>
                 <div class="search"></div>
               </div>
-              <button type="button" class="buttSwitch buttNext circle right"></button>
-              <button type="button" class="buttSwitch buttBack circle left"></button>
               <div class="container ">
                 <div class="row ">
-                  <div class="col-6 contentProduct">
-                  </div>
-                  <div class="col-6 contentProduct1">
-                    </div>
-                  </div>
+                  <div class="col contentProduct"></div>
+                </div>
                 </div>
               </div>
             </div>
@@ -167,11 +87,20 @@
       </div>
     </main>
     <footer>
-          <div class="container-fluid footers">
-            <div class="row">
-
-            </div>
+      <div class="container-fluid basketFooter">
+        <div class="row">
+          <div class="col">
+            <a href="https://github.com/DocSkullka" target="_blank"><img class="footerImg" src="<%=require('./assets/git.svg')%>"></a>
+            <a href="https://github.com/Clou2Dy" target="_blank"><img class="footerImg" src="<%=require('./assets/git.svg')%>"></a>
           </div>
+          <div class="col footerYear">
+            Online Store 2023
+          </div>
+          <div class="col rsSchool">
+            <a href="https://rs.school/js/" target="_blank"><img class="footerImg" src="<%=require('./assets/rs_school_js.svg')%>"></a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

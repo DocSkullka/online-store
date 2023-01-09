@@ -7,9 +7,9 @@ body{
   .headers{
     background-color: white;
     gap: 42%;
+    padding-top: 0;
     padding-left: 20px;
-    border-bottom: solid 1px pink;
-    margin: 0px;
+    border-bottom: solid 5px pink;
     margin-bottom: 10px;
     @extend %colWhite;
     font-size: 20px;
@@ -17,6 +17,9 @@ body{
         width: 100%;
         display: flex;
         gap: 40%;
+    }
+    .total {
+        color: black;
     }
 }
 
@@ -148,89 +151,18 @@ border-bottom-right-radius: $br ;
             background-color: #52339a;
         }
 
-        .buttSwitch {
-            width: 80px;
-            height: 80px;
-            margin: 10px;
-            display: inline-block;
-            position: relative;
-          
-            &::before {
-              content: '';
-              display: block;
-              width: 20px;
-              height: 20px;
-              top: 50%;
-              left: 50%;
-              border-style: solid;
-              border-color: rgb(255, 255, 255);
-              border-width: 2px 2px 0 0;
-              position: absolute;
-              transform-origin: 50% 50%;
-            }
-          
-            &.left::before { 
-              transform: rotate(-135deg);
-              margin: -10px 0 0 -12px;
-            }
-            &.right::before { 
-              transform: rotate(45deg); 
-              margin: -10px 0 0 -18px;
-            }
-            
-            &::after {
-              content: '';
-              display: block;
-              top: 50%;
-              left: 50%;
-              border-style: solid;
-              border-color: rgb(255, 255, 255);
-              position: absolute;
-              transform-origin: 50% 50%;
-            }
-            
-            &.left::after { 
-              width: 30px;
-              height: 0;
-              border-width: 2px 0 0 0;
-              transform: translate(-14px, -1px);
-            }
-            
-            &.right::after { 
-              width: 30px;
-              height: 0;
-              border-width: 2px 0 0 0;
-              transform: translate(-26px, -1px);
-            }
-            
-            &.circle {
-              background: #52339a;
-              border-radius: 50px;
-            }
-            
-            &.debug {
-              outline: 1px solid darkblue;
-          
-              &::before {
-                outline: 1px solid red;
-              }
-            }
-          }
 
         // Block Product 
-        .col-6{
+        .contentProduct{
             display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            // height: 2105px;
-            .blockProduct, .blockProduct1{
-                display: flex;
+            flex-wrap: wrap;
+            .blockProduct{
                 flex-direction: column;
                 margin: 5px;
-                width: 100%;
+                width: 380px;
                 border-radius: 15px;
                 border: solid 5px #05b1b1;
-                .cardProduct, .cardProduct1{
+                .cardProduct{
                     height: 500px;
                     @include borderT(10px,10px);
                     .itemImg, .itemImg1{
@@ -250,19 +182,19 @@ border-bottom-right-radius: $br ;
                 .blockInfo{
                     background-color: #52339a;
                     display: flex;
-                    // gap: 20%;
+                    height: 160px;
 
                     .itemInfo, .itemInfo1{
                         word-wrap: break-word;
                         padding-left: 3px;
                         @include borderB(10px,10px);
                         @extend %colWhite;
-                        font-size: 20px;
+                        font-size: 15px;
                         
                     }
                     .buttonCard{
                         margin-left: auto;
-                        margin-right: 40px;
+                        margin-right: 20px;
                         gap: 10%;
                         .addItem{
                             background-color: #05b1b1;
@@ -296,13 +228,10 @@ border-bottom-right-radius: $br ;
     
 }
 
-.footers{
-    background-color: #52339a;
-    padding-left: 20px;
-    border-radius: 30px 30px 0px 0px;
-    border-top: solid 0.2em #52339a;
-    padding-top: 20px;
-    margin: 0px;
-    @extend %colWhite;
-    font-size: 20px;
+.hidden {
+    display: none;
+}
+
+.visible{
+    display: block;
 }

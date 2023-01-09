@@ -4,34 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="basket.css" />
+    <link href="./bootstrap.min.css" rel="stylesheet">
     <title>Online-store basket</title>
   </head>
   <body>
     <header>
-      <div class="container headers">
+      <div class="container-fluid bsktHeader">
         <div class="row">
           <div class="col">
-            <img
-              src="../src/assets/online-store-ai-low-resolution-logo-color-on-transparent-background.svg"
-              alt="Logo"
-            />
+            <img src="<%=require('./assets/logo.png')%>">
+          </div>
+          <div class="col cart">
+            Cart total:
+          </div>
+          <div class="col basket">
+            0
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <div class="container mainBlock">
-        <div class="row mainRowBlock">
-          <div class="col colMainHead"></div>
-          <div class="col colMainBlock">
-            <div class="col smallMainImg"></div>
-            <div class="col bigMainImg"></div>
-            <div class="col mainItemInfo"></div>
+    <main class="basketMain">
+      <div class="container">
+        <div class="row basketContent">
+          Cart is empty
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container-fluid basketFooter">
+        <div class="row">
+          <div class="col">
+            <a href="https://github.com/DocSkullka" target="_blank"><img class="footerImg" src="<%=require('./assets/git.svg')%>"></a>
+            <a href="https://github.com/Clou2Dy" target="_blank"><img class="footerImg" src="<%=require('./assets/git.svg')%>"></a>
+          </div>
+          <div class="col footerYear">
+            Online Store 2023
+          </div>
+          <div class="col rsSchool">
+            <a href="https://rs.school/js/" target="_blank"><img class="footerImg" src="<%=require('./assets/rs_school_js.svg')%>"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

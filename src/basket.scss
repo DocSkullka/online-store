@@ -1,35 +1,56 @@
-.headers{
-    background-color: #52339a;
-    gap: 42%;
-    padding-left: 20px;
-    border-radius: 0px 0px 30px 30px;
-    border-bottom: solid 0.2em #52339a;
-    padding-top: 20px;
-    margin: 0px;
-    margin-bottom: 10px;
-    @extend %colWhite;
-    font-size: 20px;
-}
+html, body {
+    margin: 0;
+    color: black;
+  }
 
-.mainBlock{
+
+@mixin centerContent {
     display: flex;
     justify-content: center;
-    .mainRowBlock{
-        width: 1200px;
-        height: 800px;
-        border-radius: 20px;
-        background-color: #52339a;
-        .colMainHead{
-            height: 50px;
-            border-top-left-radius:20px ;
-            border-top-right-radius: 20px;
-            background-color: aqua;
-        }
-        .colMainBlock{
-            .sallMainImg{
-                width: 10px;
-                background-color:black ;
-            }
-        }
+    align-items: center;
+}
+
+.bsktHeader{
+    gap: 33%;
+    width: 100%;
+    background-color: white;
+    padding: 0 40px;
+    border-bottom: solid 5px pink;
+    margin-bottom: 10px;
+    font-size: 20px;
+    .cart{
+        @include centerContent;
     }
+    .basket{
+        @include centerContent;
+        justify-content: end;
+    }
+}
+
+.basketMain{
+    min-height: calc(100vh - 130px);
+    .basketContent{
+        @include centerContent;
+        font-size: 40px;
+    }
+}
+
+.basketFooter{
+    gap: 33%;
+    width: 100%;
+    background-color: white;
+    padding: 0 40px;
+    border-top: solid 5px pink;
+    font-size: 40px;
+    .footerYear{
+        @include centerContent;
+    }
+    .rsSchool{
+        @include centerContent;
+        justify-content: end;
+    }
+}
+
+.footerImg{
+    width: 70px;
 }
