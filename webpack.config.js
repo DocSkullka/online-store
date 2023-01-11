@@ -16,11 +16,7 @@ module.exports = {
   }),
      new HtmlWebpackPlugin({
        template: './src/index.html'
-      }),
-    new HtmlWebpackPlugin({
-      template: './src/basket.html',
-      filename: 'basket.html',
-    }),
+      })
   ],
   module: {
     rules: [
