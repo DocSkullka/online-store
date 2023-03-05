@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%=require('./assets/icon.png')%>" type="image/x-icon">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <title>Online-Store</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid bsktHeader">
+      <div class="row">
+        <div class="col">
+          <a href="/" data-navigo><img src="<%=require('./assets/logo.png')%>"></a>
+        </div>
+        <div class="col cartTotal">
+          <p class="header__cost">Total amount: <span>0.00</span> $</p>
+        </div>
+        <div class="col cart"><a href="/cart/" data-navigo>
+          <p class="basket__basket-amount">0</p>
+        </a></div>
+      </div>
+    </div>
+  </header>
+    <main id="root">
+    </main>
+    <footer>
+      <div class="container-fluid basketFooter">
+        <div class="row">
+          <div class="col git">
+            <a href="https://github.com/DocSkullka" target="_blank"><img class="footerImg" src="<%=require('./assets/git.svg')%>" alt="Git"> <span>Artem</span> </a>
+            <a href="https://github.com/Clou2Dy" target="_blank"><img class="footerImg" src="<%=require('./assets/git.svg')%>" alt="Git"> <span>Igor</span></a>
+          </div>
+          <div class="col footerYear">
+            Online Store 2023
+          </div>
+          <div class="col rsSchool">
+            <a href="https://rs.school/js/" target="_blank"><img class="footerImg" src="<%=require('./assets/rs_school_js.svg')%>" alt="rs"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
