@@ -12,10 +12,10 @@ export function totalDiscountPrice(
     document.querySelector(".cost__body-price .cost__body-price-amount")
   );
   let numb = 0;
-  if (lsDisc[fPromo] === true) {
+  if (lsDisc[fPromo]) {
     numb += firstPercent / 100;
   }
-  if (lsDisc[sPromo] === true) {
+  if (lsDisc[sPromo]) {
     numb += secondPercent / 100;
   }
   if (localStorage.getItem("cart-storage")) {
